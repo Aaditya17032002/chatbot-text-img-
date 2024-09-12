@@ -102,6 +102,3 @@ def chat():
     except Exception as e:
         app.logger.error(f"Exception occurred: {e}")
         return jsonify({"error": "Failed to process the request"}), 500
-
-if __name__ == '__main__':
-    app.run(debug=True)
